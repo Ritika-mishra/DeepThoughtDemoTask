@@ -1,0 +1,281 @@
+.title-bar {
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    background: #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.left-align {
+    align-items: center;
+    display: inline-block;
+}
+
+.right-align {
+    float: right;
+}
+
+
+.outer-container {
+    padding: 1.4% 2% 0% 2%;
+}
+
+
+.big-container {
+    position: relative;
+    margin: 10%;
+    width: -webkit-fill-available;
+    border-radius: 20px;
+}
+
+.inner-container {
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 6%;
+    margin: 2%;
+    margin-bottom: 0;
+    padding-bottom: 367px;
+}
+
+.inner-content {
+    width: 450px;
+    grid-gap: 5%;
+    align-items: center;
+    display: flex;
+    padding: 2%;
+
+}
+
+.cards,
+.card {
+    border-radius: 20px;
+
+}
+
+h1,
+h2 {
+    margin: 7px;
+    font-size: 20px;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    background: #0029FF;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.inner-card-header {
+    height: 36.8px;
+    background: #000000;
+    text-align: center;
+    padding-left: 0px;
+
+}
+
+
+.thread {
+    width: 100%;
+    background-color: rgba(255, 250, 241, 0.536);
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #e6e6e6;
+    padding: 0% 5% 0% 4%;
+
+}
+
+.inner-card-header1 {
+    background: #e6e6e6;
+    color: #000000;
+}
+
+
+
+input {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 3px;
+}
+
+.dropdown {
+    border: 3px solid #e6e6e6;
+}
+
+.dropdown-item,
+li {
+    font-size: smaller;
+}
+
+.add-more-btn {
+
+    padding: 3px 7px 3px 7px;
+    text-align: center;
+    font-size: 16px;
+    margin: 09px 20px;
+    width: fit-content;
+    border-radius: 11px 11px;
+}
+
+.btn-right {
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+.youtube {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
+    /* margin-right: 20px;  */
+
+}
+
+.task5 {
+    margin: 2% 10% 0 10%;
+}
+
+.input-padding {
+    padding: 4%;
+}
+
+.next-btn,
+.btn-right {
+    display: block;
+    margin-left: auto;
+}
+
+.next-btn {
+    padding: 1%;
+    margin-right: 147px;
+    font-size: large;
+    margin-bottom: 5%;
+}
+
+.add-more-btn,
+.next-btn {
+    border: none;
+    color: white;
+    background-color: #0029FF;
+}
+
+.side-btn {
+    position: fixed;
+    margin: 21% 96% 0;
+}
+
+.task3 {
+    padding: 1% 1% 38% 1%;
+}
+
+.nav-container {
+    margin-right: 60%;
+    position: fixed;
+    margin-top: 10%;
+    right: 33%;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    opacity: 1;
+    /* border: 2px solid black; */
+    position: fixed;
+    left: -103%;
+    width: 152px;
+    height: 287px;
+    margin: 0;
+    padding: 34px 0px 17px 8px;
+    /* list-style: none; */
+    background-color: white;
+    box-shadow: 0px 5px 11px 0px rgb(0 0 0 / 40%);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: contents;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: left;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+label {
+    display: block;
+}
+
+span {
+    padding-right: 4%;
+    font-size: 25px;
+    display: inline;
+}
